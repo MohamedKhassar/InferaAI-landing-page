@@ -6,5 +6,5 @@
 }
 
 body {
-    @apply bg-slate-950 text-white mx-auto max-w-7xl font-Poppins h-[200vh];
+    @apply bg-slate-950 text-white mx-auto max-w-7xl font-Poppins;
 }
