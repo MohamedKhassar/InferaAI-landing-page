@@ -1,9 +1,15 @@
 import { MailOpen } from "lucide-react"
 import Button from "../shared/Button"
 import AI_banner from "/assets/AI_banner.jpeg"
+import { motion } from "framer-motion"
+import { fadeOut } from "../../lib/animations"
 const Hero = () => {
     return (
-        <main className="flex lg:flex-row flex-col justify-between items-center lg:my-16 my-10 lg:mx-5 mx-3 lg:gap-0 gap-18">
+        <motion.main
+        variants={fadeOut(.1)}
+        initial="initial"
+        animate="animate"
+        className="flex lg:flex-row flex-col justify-between items-center lg:my-16 my-10  lg:gap-0 gap-18">
             <section className="max-w-[42rem] lg:space-y-10 space-y-7 lg:space-x-7">
                 <h1 className="lg:text-6xl md:text-3xl lg:text-start text-center text-xl font-extrabold lg:leading-20">
                     Empower Your Business
@@ -12,9 +18,9 @@ const Hero = () => {
                 <p className="lg:text-lg md:text-base text-sm text-gray-300 lg:text-start text-center lg:leading-8 leading-7 tracking-tighter">
                     Our AI SaaS platform seamlessly integrates with your existing workflows to deliver real‑time insights, intelligent automation, and data‑driven decision-making. Experience a future where your business runs smarter, faster, and more efficiently.
                 </p>
-                <div className="flex items-center justify-between border border-slate-700 px-1.5 rounded-full bg-slate-900 lg:w-4/5 w-full place-self-center lg:place-self-start gap-1">
+                <div className="flex items-center justify-between border-2 border-slate-700 px-1.5 rounded-full bg-slate-900 lg:w-4/5 w-full place-self-center lg:place-self-start gap-1 duration-200 has-focus:border-purple-800">
                     <MailOpen className="md:mx-4 mx-2 md:size-8 text-gray-600" />
-                    <input type="email" className="outline-none h-full md:w-full w-4/6 lg:placeholder:text-base placeholder:text-sm" required placeholder="johndoe@gmail.com" />
+                    <input type="email" className="outline-none md:w-full w-4/6 lg:placeholder:text-base placeholder:text-sm has" required placeholder="johndoe@gmail.com" />
                     <Button className="rounded-full my-1.5 md:text-base text-xs lg:!py-3 !py-4 !px-4">
                         Subscribe
                     </Button>
@@ -26,7 +32,7 @@ const Hero = () => {
                     <img loading="lazy" src={AI_banner} alt="AI_banner" className="hover:scale-110 transition-transform lg:h-110 object-contain" />
                 </div>
             </section>
-        </main>
+        </motion.main>
     )
 }
 

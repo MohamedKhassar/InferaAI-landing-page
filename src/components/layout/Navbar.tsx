@@ -23,7 +23,7 @@ const Navbar = () => {
         }
     })
     return (
-        <header className="lg:py-5 lg:px-6 py-3 px-4 bg-black/30  sticky top-4 lg:rounded-4xl rounded-2xl mt-4 z-50 flex items-center justify-between mx-2 backdrop-blur-md">
+        <header className="lg:py-5 lg:px-6 py-3 px-4 bg-black/30  sticky top-4 lg:rounded-4xl rounded-2xl z-50 flex items-center justify-between mx-2 backdrop-blur-md">
             <div>
                 <HashLink to="/#" className="flex items-center gap-3 w-fit">
                     <img src={logo} className="lg:size-12 size-10" alt="" />
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </HashLink>
             </div>
             <div ref={navRef} className="lg:max-w-4xl lg:w-full w-fit">
-                <nav className={`flex lg:flex-row justify-between items-center gap-6 lg:static absolute top-20 right-3 lg:border-none border-violet-500 border-2 rounded-xl lg:p-0 px-4 py-6 ${!isOpen ? "hidden lg:flex" : "flex-col bg-slate-900/80 lg:bg-transparent"}`}>
+                <nav className={`flex lg:flex-row justify-between items-center gap-6 lg:static absolute top-20 right-3 lg:border-none border-violet-500 border-2 rounded-xl lg:p-0 px-4 py-6 ${!isOpen ? "hidden lg:flex" : "flex-col bg-slate-900/90 lg:bg-transparent"}`}>
                     <ul className="flex flex-col lg:flex-row items-center gap-5">
                         {navLinks.map(({ text, href }, index) => (
                             <NavItem key={index} text={text} href={href} />
