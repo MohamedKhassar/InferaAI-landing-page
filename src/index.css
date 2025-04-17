@@ -6,5 +6,9 @@
 }
 
 body {
-    @apply bg-slate-950 text-white mx-auto max-w-7xl font-Poppins;
+    @apply bg-slate-950 text-white mx-auto lg:max-w-7xl max-w-lg font-Poppins;
+}
+
+html{
+    @apply scroll-smooth;
 }
