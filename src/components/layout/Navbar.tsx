@@ -30,7 +30,7 @@ const Navbar = () => {
                     <h1 className="lg:text-2xl text-lg font-semibold bg-gradient-to-r from-purple-500 via-purple-500 to-cyan-500 text-transparent bg-clip-text">InferaAI</h1>
                 </HashLink>
             </div>
-            <div ref={navRef} className="lg:max-w-3xl lg:w-full w-fit">
+            <div ref={navRef} className="lg:max-w-4xl lg:w-full w-fit">
                 <nav className={`flex lg:flex-row justify-between items-center gap-6 lg:static absolute top-20 right-3 lg:border-none border-violet-500 border-2 rounded-xl lg:p-0 px-4 py-6 ${!isOpen ? "hidden lg:flex" : "flex-col bg-slate-900/80 lg:bg-transparent"}`}>
                     <ul className="flex flex-col lg:flex-row items-center gap-5">
                         {navLinks.map(({ text, href }, index) => (
