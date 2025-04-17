@@ -9,7 +9,7 @@ export const navLinks: NavLinkType[] = [
   { href: "/#pricing", text: "Pricing" },
 ];
 
-export const statsData:StatsType[] = [
+export const statsData: StatsType[] = [
   {
     value: 100,
     suffix: "+",
@@ -34,4 +34,17 @@ export const statsData:StatsType[] = [
     label: "Years of Innovation",
     Icon: Clock,
   },
+];
+
+export const companyLogos: string[] = [
+  "/assets/companies/airbnb.svg",
+  "/assets/companies/discord.svg",
+  "/assets/companies/google.svg",
+  "/assets/companies/microsoft.svg",
+  "/assets/companies/paypal.svg",
+  "/assets/companies/slack.svg",
+  "/assets/companies/spotify.svg",
+  "/assets/companies/tiktok.svg",
+  "/assets/companies/xiaomi.svg",
+  "/assets/companies/youtube.svg",
 ];

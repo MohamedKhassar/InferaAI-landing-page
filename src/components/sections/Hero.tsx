@@ -11,7 +11,7 @@ const Hero = () => {
         animate="animate"
         className="flex lg:flex-row flex-col justify-between items-center lg:my-16 my-10  lg:gap-0 gap-18">
             <section className="max-w-[42rem] lg:space-y-10 space-y-7 lg:space-x-7">
-                <h1 className="lg:text-6xl md:text-3xl lg:text-start text-center text-xl font-extrabold lg:leading-20">
+                <h1 className="lg:text-6xl md:text-3xl lg:text-start text-center text-2xl font-extrabold lg:leading-20">
                     Empower Your Business
                     <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text"> with AI</span>
                 </h1>
