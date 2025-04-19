@@ -1,4 +1,10 @@
-import { Bot, BarChart2, Telescope } from "lucide-react";
+import {
+  Bot,
+  BarChart2,
+  Telescope,
+  Rocket,
+  HeartHandshake,
+} from "lucide-react";
 import { FeatureItem, NavLinkType, StatsType } from "./types";
 import { Clock, Lightbulb, Users, Verified } from "lucide-react";
 
@@ -55,18 +61,34 @@ export const features: FeatureItem[] = [
     Icon: Bot,
     title: "Intelligent Automation",
     description: "Streamline processes and reduce manual tasks.",
-    delay:.2
+    delay: 0.2,
   },
   {
     Icon: BarChart2,
     title: "Real-Time Analytics",
     description: "Gain actionable insights as events unfold.",
-    delay:.4
+    delay: 0.4,
   },
   {
     Icon: Telescope,
     title: "Predictive Insights",
     description: "Anticipate trends and mitigate risks before they occur.",
-    delay:.6
+    delay: 0.6,
+  },
+];
+
+export const missionVision: FeatureItem[] = [
+  {
+    Icon: HeartHandshake,
+    title: "Mission",
+    description:
+      "Our mission is to use AI for the good of humanity and the planet.",
+    delay: 0.2,
+  },
+  {
+    Icon: Rocket,
+    title: "Vision",
+    description: "Our vision is to drive business innovation and growth.",
+    delay: 0.4,
   },
 ];

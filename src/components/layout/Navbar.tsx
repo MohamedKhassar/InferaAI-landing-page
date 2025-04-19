@@ -5,8 +5,6 @@ import logo from "/assets/logo.svg"
 import { useEffect, useRef, useState } from "react"
 import { navLinks } from "../../lib/data"
 import { HashLink } from "react-router-hash-link"
-import { motion } from "framer-motion"
-import { fadeOut } from "../../lib/animations"
 
 
 const Navbar = () => {
@@ -25,11 +23,7 @@ const Navbar = () => {
         }
     })
     return (
-        <motion.header
-            variants={fadeOut(.3)}
-            initial="initial"
-            animate="animate"
-            className="lg:py-5 lg:px-6 py-3 px-4 bg-black/30  sticky top-4 lg:rounded-4xl rounded-2xl z-50 flex items-center justify-between mx-2 backdrop-blur-md">
+        <header className="lg:py-5 lg:px-6 py-3 px-4 bg-black/30  sticky top-4 lg:rounded-4xl rounded-2xl z-50 flex items-center justify-between mx-2 backdrop-blur-md">
             <div>
                 <HashLink to="/#" className="flex items-center gap-3 w-fit">
                     <img src={logo} className="lg:size-12 size-10" alt="" />
@@ -54,7 +48,7 @@ const Navbar = () => {
                     }
                 </Button>
             </div>
-        </motion.header>
+        </header>
     )
 }
 
