@@ -3,11 +3,11 @@ import { companyLogos } from "../../lib/data"
 import { fadeOut } from "../../lib/animations"
 const TrustedBy = () => {
     return (
-        <main id="services" className="lg:my-30 my-15">
+        <main className="lg:my-30 my-15">
             <section className="md:space-y-20 space-y-10">
                 <motion.h2
 
-                    variants={fadeOut()}
+                    variants={fadeOut(.2)}
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}
@@ -15,7 +15,7 @@ const TrustedBy = () => {
                 >Trusted by Industry <span className="bg-gradient-to-r from-blue-600 to-purple-700 text-transparent bg-clip-text">Leaders</span></motion.h2>
                 <motion.div
 
-                    variants={fadeOut(.2)}
+                    variants={fadeOut(.4)}
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}

@@ -6,9 +6,13 @@
 }
 
 body {
-    @apply bg-slate-950 text-white sm:mx-auto mx-5 my-5 lg:max-w-[95rem] md:max-w-3xl max-w-md font-Poppins;
+    @apply bg-slate-950 text-white sm:mx-auto mx-5 py-5 lg:max-w-[95rem] md:max-w-3xl max-w-md font-Poppins;
 }
 
 html{
     @apply scroll-smooth;
+}
+
+[id]{
+    @apply scroll-mt-25;
 }

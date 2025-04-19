@@ -20,3 +20,10 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     children: React.ReactNode;
     className?: string;
 };
+
+export interface FeatureItem {
+    Icon: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
+    title: string;
+    description: string;
+    delay?:number
+  }
