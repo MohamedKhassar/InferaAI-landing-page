@@ -4,15 +4,21 @@ import {
   Telescope,
   Rocket,
   HeartHandshake,
+  Clock,
+  Lightbulb,
+  Users,
+  Verified,
+  Gem,
+  Zap,
+  Crown,
+  Check,
 } from "lucide-react";
 import { FeatureItem, NavLinkType, StatsType } from "./types";
-import { Clock, Lightbulb, Users, Verified } from "lucide-react";
 
 export const navLinks: NavLinkType[] = [
   { href: "/#", text: "Home" },
   { href: "/#services", text: "services" },
   { href: "/#about", text: "About" },
-  { href: "/#features", text: "Features" },
   { href: "/#pricing", text: "Pricing" },
 ];
 
@@ -90,5 +96,49 @@ export const missionVision: FeatureItem[] = [
     title: "Vision",
     description: "Our vision is to drive business innovation and growth.",
     delay: 0.4,
+  },
+];
+
+export const pricingPlans = [
+  {
+    title: "Basic",
+    price: "$19/mo",
+    description: "Perfect for getting started",
+    features: [
+      { text: "Access to basic AI tools", FIcon: Check },
+      { text: "Limited data analytics", FIcon: Check },
+      { text: "Email support", FIcon: Check },
+    ],
+    cta: "Choose Plan",
+    isPopular: false,
+    Icon: Gem,
+  },
+  {
+    title: "Pro",
+    price: "$49/mo",
+    description: "BEST VALUE",
+    features: [
+      { text: "Everything in Basic", FIcon: Check },
+      { text: "Advanced AI features", FIcon: Check },
+      { text: "Real-time analytics", FIcon: Check },
+      { text: "Priority email support", FIcon: Check },
+    ],
+    cta: "Choose Plan",
+    isPopular: true,
+    Icon: Zap,
+  },
+  {
+    title: "Enterprise",
+    price: "$99/mo",
+    description: "For large scale needs",
+    features: [
+      { text: "Everything in Pro", FIcon: Check },
+      { text: "Dedicated account manager", FIcon: Check },
+      { text: "Custom integrations", FIcon: Check },
+      { text: "24/7 premium support", FIcon: Check },
+    ],
+    cta: "Choose Plan",
+    isPopular: false,
+    Icon: Crown,
   },
 ];
