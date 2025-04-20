@@ -7,7 +7,8 @@ const Pricing = () => {
         <motion.main
             variants={fadeOut(.1)}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
+            viewport={{ once: true }}
             id="pricing"
             className="lg:space-y-18 space-y-10 lg:mb-30 mb-15">
             <section className="space-y-5">

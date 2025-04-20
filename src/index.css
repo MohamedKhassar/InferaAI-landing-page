@@ -16,3 +16,15 @@ html{
 [id]{
     @apply scroll-mt-30;
 }
+
+::-webkit-scrollbar-thumb{
+    @apply bg-gradient-to-b from-violet-900 to-blue-950 rounded-md;
+}
+
+
+::-webkit-scrollbar{
+    @apply w-1;
+}
+::-webkit-scrollbar-button{
+    @apply hidden;
+}

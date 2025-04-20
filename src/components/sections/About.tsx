@@ -8,7 +8,8 @@ const About = () => {
         <motion.main
             variants={fadeOut(.1)}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
+            viewport={{ once: true }}
             id="about"
             className="flex lg:flex-row flex-col-reverse justify-between items-center lg:my-30 my-15 gap-18">
             <section className="rounded-4xl relative">
